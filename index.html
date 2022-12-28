@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/5d63e4335c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Simple stopwatch</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-pages">
+            <div class="nav-item">
+                <a href="#">Timer</a>
+                <div class="active-nav" id="ul"></div>
+            </div>
+            <div class="nav-item">
+                <a href="#">Saves</a>
+            </div>
+        </ul>
+    </nav>
+    <div class="buttonDiv">
+        <div class="checkBox" id="S" onclick="buttonChecked()">S</div>
+        <div class="checkBox" id="Ms" onclick="buttonChecked()">Ms</div>
+    </div>
+    <div class="mainBlock">
+        <div class="timer"><b>00:00s</b></div>
+        <div class="block1">
+            <div class="buttons" onclick="startTimer()">START</div>
+            <div class="buttons" onclick="pauseTimer()">PAUSE</div>
+            <div class="buttons" onclick="resetTimer()">RESET</div>
+
+        </div>
+    </div>
+    <div class="save">
+        <div><i class="far fa-save fa-6x"></i></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js" integrity="sha512-RL2ypMFkOs/iB79bWnNiFrZRCqyExtQ38n/K+t7Xjf09YZcvSzqgSaGVj+fiVYEqVRLf/WjdHmwGImZM3XO5gA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
