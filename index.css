@@ -1,51 +1,43 @@
 body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background: whitesmoke;
     color: whitesmoke;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 .block1 {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
+    display: flex;
+    height: 30%;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .buttonDiv {
-    height: 50%;
-    width: 10%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    row-gap: 10%;
-}
-
-.save {
-    position: relative;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     height: 50%;
+    justify-content: center;
+    row-gap: 10%;
     width: 10%;
 }
 
 .mainBlock {
-    display: flex;
-    height: 50%;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: black;
-    border: 1px slategray solid;
     border-radius: 20px;
+    border: 1px slategray solid;
     box-shadow: 5px 5px 155px 30px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    width: 50%;
 }
 
 #S {
@@ -55,13 +47,13 @@ body {
 }
 
 nav {
-    position: absolute;
-    left: -100%;
     color: black;
-    top: 15%;
     display: flex;
     justify-content: center;
+    left: -100%;
     padding: 3rem;
+    position: absolute;
+    top: 15%;
 }
 
 input {
@@ -75,22 +67,21 @@ ul {
 }
 
 .nav-pages a {
-    text-decoration: none;
     color: #252525;
-    font-weight: bold;
+    color: transparent;
     font-family: "Lato", sans-serif;
     font-size: 1.75rem;
-    color: transparent;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .active-nav {
-    height: 3px;
     background-color: transparent;
-    /*#385ae0*/
     border-radius: 1rem;
-    position: absolute;
-    left: 0;
     bottom: -8px;
+    height: 3px;
+    left: 0;
+    position: absolute;
     width: 100%;
 }
 
@@ -99,57 +90,131 @@ ul {
 }
 
 .checkBox {
-    height: 15%;
-    width: 65%;
-    text-align: center;
-    display: flex;
+    align-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.43);
     border-radius: 15px;
     border: 3px slategray solid;
-    justify-content: center;
-    align-items: center;
-    font-family: "Lato", sans-serif;
-    font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.43);
-    z-index: 100;
     cursor: pointer;
     display: flex;
+    display: flex;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    height: 15%;
     justify-content: center;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    z-index: 100;
 }
 
 .fa-save {
     color: transparent;
     cursor: pointer;
-    position: absolute;
-    left: 10px;
+    height: auto;
+    margin-left: 5%;
+    width: auto;
+}
+
+footer {
+    height: 50%;
+    width: 10%;
 }
 
 .timer {
-    width: 100%;
-    height: 70%;
-    margin: 0%;
-    text-align: center;
-    letter-spacing: 10px;
+    align-items: center;
+    display: flex;
+    font-family: "Lato", sans-serif;
     font-size: 200px;
     font-weight: 700 bold;
-    font-family: "Lato", sans-serif;
-    display: flex;
+    height: 70%;
     justify-content: center;
-    align-items: center;
+    letter-spacing: 10px;
+    margin: 0%;
+    text-align: center;
+    width: 100%;
 }
 
 .buttons {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 40px;
     border-radius: 20px;
+    display: flex;
+    font-size: 40px;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
 }
 
 .buttons:hover {
-    cursor: pointer;
     background-color: rgba(8, 3, 83, 0.35);
+    cursor: pointer;
+}
+
+.savesBlock {
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 5px;
+    border: 3px solid #385ae0b9;
+    color: black;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    height: 70%;
+    margin-left: 5%;
+    overflow: auto;
+    padding: 3%;
+    row-gap: 5%;
+    width: 100%;
+}
+
+#style-7::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#style-7::-webkit-scrollbar {
+    background-color: #F5F5F5;
+    width: 10px;
+}
+
+#style-7::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(63, 63, 207, 1) 0%, rgba(55, 46, 191, 1) 50%, rgba(63, 63, 207, 1) 100%);
+    background: rgb(63, 63, 207);
+    border-radius: 10px;
+}
+
+.test {
+    align-items: center;
+    column-gap: 3%;
+    display: flex;
+    height: 10%;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+.name {
+    overflow: hidden;
+}
+
+.box {
+    align-items: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+.removeBut {
+    border-radius: 5px;
+    border: 3px solid gray;
+}
+
+.removeBut:hover {
+    background-color: rgba(255, 0, 0, 0.35);
+    cursor: pointer;
 }
