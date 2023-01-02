@@ -153,7 +153,6 @@ footer {
 
 .savesBlock {
     align-items: flex-start;
-    justify-content: center;
     border-radius: 5px;
     border: 3px solid transparent;
     color: black;
@@ -163,6 +162,7 @@ footer {
     font-family: "Lato", sans-serif;
     font-weight: bold;
     height: 70%;
+    justify-content: center;
     margin-left: 5%;
     overflow: auto;
     padding: 3%;
@@ -202,6 +202,7 @@ footer {
 .box {
     align-items: center;
     color: rgb(0, 0, 0);
+    color: transparent;
     display: flex;
     height: 90%;
     justify-content: center;
@@ -211,7 +212,7 @@ footer {
 
 .removeBut {
     border-radius: 5px;
-    border: 3px solid gray;
+    border: 3px solid transparent;
 }
 
 .removeBut:hover {
