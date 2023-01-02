@@ -8,7 +8,7 @@ const activeNav = document.querySelector(".active-nav");
 const saveBut = document.getElementsByClassName("fa-save")[0];
 const savesBlock = document.getElementsByClassName("savesBlock")[0];
 const nav = document.getElementsByTagName("nav")[0];
-const node = document.getElementsByClassName("test")[0];
+const node = document.getElementsByClassName("timesave")[0];
 gsap.registerPlugin(Flip);
 let upperChecked = true;
 let interval = null;
@@ -119,7 +119,7 @@ function addTimeToBlock() {
     document.getElementsByClassName("savesBlock")[0].style.justifyContent = "flex-start";
     document.getElementsByClassName("savesBlock")[0].appendChild(node.cloneNode(true));
     let time = document.getElementsByClassName("time")[length].innerHTML = timer.textContent
-    const scnd = document.getElementsByClassName("test")[1]
+    const scnd = document.getElementsByClassName("timesave")[1]
     if (removed === false) {
         removed = true
         document.getElementsByClassName("savesBlock")[0].removeChild(scnd)[1]
