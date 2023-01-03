@@ -114,7 +114,7 @@ function pauseTimer() {
         interval = null;
         gsap.to(saveBut, { color: "#294fe3" });
         if (hide == true) {
-            nav.style.left = "40%"
+            nav.style.left = "50%"
             hide = false;
 
             gsap.to(navPages[0], { color: "#385ae0" });

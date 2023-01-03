@@ -47,6 +47,7 @@ body {
 }
 
 nav {
+    width: auto;
     color: black;
     display: flex;
     justify-content: center;
@@ -54,6 +55,7 @@ nav {
     padding: 3rem;
     position: absolute;
     top: 15%;
+    transform: translate(-50%, -50%);
 }
 
 input {
@@ -116,16 +118,18 @@ ul {
     width: auto;
 }
 
-footer {
+.footer {
     height: 50%;
     width: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .timer {
     align-items: center;
     display: flex;
     font-family: "Lato", sans-serif;
-    font-size: 200px;
+    font-size: 180px;
     font-weight: 700 bold;
     height: 70%;
     justify-content: center;
@@ -208,6 +212,7 @@ footer {
     justify-content: center;
     text-align: center;
     width: 30%;
+    font-size: 15px;
 }
 
 .removeBut {
@@ -218,4 +223,133 @@ footer {
 .removeBut:hover {
     background-color: rgba(255, 0, 0, 0.35);
     cursor: pointer;
+}
+
+@media (max-width: 1700px) {
+    .box {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .timer {
+        font-size: 120px;
+    }
+    .savesBlock {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .timer {
+        font-size: 80px;
+    }
+    .buttons {
+        font-size: 25px;
+    }
+    .fa-save {
+        transform: scale(75%);
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: 50%;
+        grid-template-rows: 15% 5% 35% 25%;
+        row-gap: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    nav {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        top: 45%;
+    }
+    .buttonDiv {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        flex-direction: row;
+        column-gap: 25%;
+        height: 100%;
+        width: 80%;
+    }
+    .checkBox {
+        height: 90%;
+    }
+    .mainBlock {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 100%;
+        width: 100%;
+    }
+    .footer {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .fa-save {
+        width: 50%;
+    }
+    .savesBlock {
+        width: 200px;
+    }
+    .timesave {
+        height: 20%;
+    }
+    .box {
+        font-size: 10px;
+    }
+    .timer {
+        font-size: 65px;
+    }
+    .buttons {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 510px) {
+    body {
+        row-gap: 2%;
+    }
+    .mainBlock {
+        width: 125%;
+    }
+    .timer {
+        font-size: 55px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 0%;
+    }
+    .savesBlock {
+        height: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+    ul {
+        gap: 5rem;
+    }
+    .mainBlock {
+        width: 125%;
+        height: 75%;
+    }
+    .timer {
+        font-size: 35px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .savesBlock {
+        height: 75%;
+    }
 }
